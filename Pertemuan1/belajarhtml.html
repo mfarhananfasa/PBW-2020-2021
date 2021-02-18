@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Belajar HTML</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <!--Part 3 : Mengenal Tag, Element, Atribut HTML-->
@@ -9,16 +10,17 @@
 <h2 align="center">Pengenalalan atribut HTML</h2>
 
 <!--Part 4 : Heading Pada HTML-->
-  <h1>ini adalah heading 1</h1>
-  <h2>ini adalah heading 2</h2>
-  <h3>ini adalah heading 3</h3>
-  <h4>ini adalah heading 4</h4>
-  <h5>ini adalah heading 5</h5>
-  <h6>ini adalah heading 6</h6>
-  <a href="https://www.youtube.com/"><h1>ini adalah heading 1 berisi link youtube </h1></a>
+	<h1>ini adalah heading 1</h1>
+	<h2>ini adalah heading 2</h2>
+	<h3>ini adalah heading 3</h3>
+	<h4>ini adalah heading 4</h4>
+	<h5>ini adalah heading 5</h5>
+	<h6>ini adalah heading 6</h6>
+	
+<a href="https://www.youtube.com/"><h1>ini adalah heading 1 berisi link youtube </h1></a>
   
 <!--Part 5 : Format Text Pada HTML-->
-  <b>ini format format text tebal</b><br/>
+	<b>ini format format text tebal</b><br/>
 	<i>ini format text italic</i><br/>
 	<u>ini format text underline</u><br/>
 	<em>ini format text em</em><br/>
@@ -31,18 +33,153 @@
 	<mark>ini format text mark</mark>
   
 <!--Part 6: Membuat Paragraf Pada HTML-->
-  <p>ini merupakan penulisan paragraf pertama dalam dokument HTML</p>
-  <p>ini merupakan penulisan paragraf kedua dalam dokument HTML</p>
+	<p>ini merupakan penulisan paragraf pertama dalam dokument HTML</p>
+	<p>ini merupakan penulisan paragraf kedua dalam dokument HTML</p>
   
-  <p align="left">1. ini merupakan penulisan paragraf rata kiri dalam dokument HTML</p>
-  <p align="right">2. ini merupakan penulisan paragraf rata kanan dalam dokument HTML</p>
-  <p align="center">3. ini merupakan penulisan paragraf rata tengah dalam dokument HTML</p>
-  <p align="justivy">4. ini merupakan penulisan paragraf rata kiri kanan dalam dokument HTML</p>
+ 	<p align="left">1. ini merupakan penulisan paragraf rata kiri dalam dokument HTML</p>
+	<p align="right">2. ini merupakan penulisan paragraf rata kanan dalam dokument HTML</p>
+	<p align="center">3. ini merupakan penulisan paragraf rata tengah dalam dokument HTML</p>
+	<p align="justivy">4. ini merupakan penulisan paragraf rata kiri kanan dalam dokument HTML</p>
   
-  ini merupakan penulisan paragrah pertama </br>
+	ini merupakan penulisan paragrah pertama </br>
 	ini merupakan penulisan paragrah kedua
   
-<!--Part 6: Membuat Paragraf Pada HTML-->
+<!--Part 7 : Membuat Tabel Pada HTML-->
+<table border="1">
+	<tr>
+		<td>baris 1 / kolom 1</td>
+		<td>baris 1 / kolom 2</td>
+		<td>baris 1 / kolom 3</td>
+	</tr>
+	<tr>
+		<td>baris 2 / kolom 1</td>
+		<td>baris 2 / kolom 2</td>
+		<td>baris 2 / kolom 3</td>
+	</tr>
+	<tr>
+		<td>baris 3/ kolom 1</td>
+		<td>baris 3/ kolom 2</td>
+		<td>baris 3/ kolom 3</td>
+	</tr>
+	<tr>
+		<td>baris 4/ kolom 1</td>
+		<td>baris 4/ kolom 2</td>
+		<td>baris 4/ kolom 3</td>
+	</tr>
+</table>	
+
+<!--Part 8: Membuat Hyperlink Pada HTML-->
+ini adalah contoh alamat absolute <a href="https://www.malasngoding.com/category/html/">klik disini</a>
+ini adalah contoh alamat alternatif <a href="part7.html">klik disini</a>
+	
+<!--Part 9 : Membuat List Pada HTML-->
+<li>belajar HTML</li>
+<li>belajar PHP</li>
+	
+<ol>
+	<li>belajar HTML</li>
+	<li>belajar PHP</li>	
+</ol>
+	
+<ul>
+	<li>belajar HTML</li>
+	<li>belajar PHP</li>	
+</ul>
+	
+<!--Part 10 : Membuat Format code pada HTML-->
+<p>HTML ---> ini menggunakan tag paragraf</p>
+<code>HyperText Markup Language ---> ini menggunakan tag code , syntax kode program dapat di ketikkan di sini dan tidak akan di eksekusi sebagai program, tetapi di tampilkan dengan text yang berformat kode program</code>
+
+<!--Part 11 : Membuat Form pada HTML-->
+<form>
+	nama : <input type="text" name="nama"><br/>
+	alamat : <input type="text" name="alamat"></br/>
+	password : <input type="password" name="pass"><br/>
+	Jenis Kelamin : 
+		<input type="radio" name="jk" value="laki-laki" checked /> 
+			Laki - Laki
+		<input type="radio" name="jk" value="perempuan" /> 
+			Perempuan
+		<br/>
+	bahas pemograman yang dikuasai :
+		<input type="checkbox" name="web"> Web
+		<input type="checkbox" name="mobile"> MOBILE
+		<input type="checkbox" name="desk"> DESKTOP
+		<br/>
+	kota asal :
+	<select>
+		<option>Semarang</option>
+		<option>Bandung</option>
+	</select>
+	<br/>
+	pesan anda :
+	<textarea>
+		
+	</textarea>
+	<br/>
+	<input type="submit" value="proses">
+</form>
+
+<!--Part 12 : Atribut Form pada HTML-->
+<form>
+	Nama Depan :<input type="text" value="nama"><br/>
+	Nama Belakang : <input type="text">
+</form>
+
+<form>
+	Nama Depan :<input type="text" value="nama" readonly><br/>
+	Nama Belakang : <input type="text">
+</form>
+
+<form>
+	Nama Depan :<input type="text" value="nama" disabled><br/>
+	Nama Belakang : <input type="text">
+</form>
+
+<form>
+	Nama Depan :<input type="text" value="nama" size="50"><br/>
+	Nama Belakang : <input type="text">
+</form>
+
+<form>
+	Nama Depan :<input type="text" value="nama" maxlength="10"><br/>
+	Nama Belakang : <input type="text">
+</form>
+
+<form>
+	<input list="browser" name="internet">
+	<datalist id="browser">
+	<option value="chrome">
+	<option value="mozilla">
+	<option value="opera">
+	</datalist>
+</form>
+
+<form>
+	<input type="date" name="day" max="1979-12-31">
+	<input type="date" name="day" min="2000-01-02">
+</form>
+
+<form>
+	<input type="text" name="nama" placeholder="masukkan nama">
+</form>
+
+<!--Part 13 : Membuat Symbol pada HTML-->
+	<p>&#9824;</p>
+	<a href="#">Simbol panah &#8594;</a><br/>
+	<a href="#">Simbol panah &rarr;</a><br/>
+	&#8704;<br/>
+	&#8711;<br/>
+	&#8719;<br/>
+	&#174; <br/>
+	&#9829;<br/>
+	&#8594;<br/>
+	&#8593;<br/>
+	&#8592;<br/>
+	&#8482;<br/>
+
+<!--Part 14 : Menampilkan Gambar Pada HTML-->
+<img class="gambar" src="malasngoding.png">
 
 </body>
 </html>
